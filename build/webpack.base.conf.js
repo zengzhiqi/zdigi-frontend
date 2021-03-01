@@ -1,18 +1,18 @@
-'use strict'
-const path = require('path')
-const utils = require('./utils')
-const config = require('../config')
-const vueLoaderConfig = require('./vue-loader.conf')
-const {readdirSync} = require('fs')
+'use strict';
+const path = require('path');
+const utils = require('./utils');
+const config = require('../config');
+const vueLoaderConfig = require('./vue-loader.conf');
+const {readdirSync} = require('fs');
 
 function resolve (dir) {
-	return path.join(__dirname, '..', dir)
+	return path.join(__dirname, '..', dir);
 }
 
-let excludeEslint = []
+let excludeEslint = [];
 readdirSync('./submodule').forEach(item => {
-	excludeEslint.push(resolve(`submodule/${item}/assets`))
-})
+	excludeEslint.push(resolve(`submodule/${item}/assets`));
+});
 
 module.exports = {
 	context: path.resolve(__dirname, '../'),
@@ -99,4 +99,4 @@ module.exports = {
 		tls: 'empty',
 		child_process: 'empty'
 	}
-}
+};

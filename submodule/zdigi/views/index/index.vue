@@ -1,7 +1,6 @@
-<!---->
+<!--首页-->
 <template>
 	<div>
-		<el-button>wwsss</el-button>
 	</div>
 </template>
 

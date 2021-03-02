@@ -31,7 +31,8 @@ module.exports = {
 		alias: {
 			'vue$': 'vue/dist/vue.esm.js',
 			'src': resolve('src'),
-			'submodule': resolve('submodule')
+			'submodule': resolve('submodule'),
+			'static': path.resolve(__dirname, '../static') // 不参与打包文件路径
 		}
 	},
 	module: {
@@ -56,10 +57,6 @@ module.exports = {
 				test: /\.js$/,
 				loader: 'babel-loader',
 				include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
-			},
-			{
-				test: /\.sass$/,
-				loaders: ['style', 'css', 'scss']
 			},
 			{
 				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

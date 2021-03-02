@@ -5,6 +5,7 @@ import App from './App';
 import router from './router';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import 'static/styles/index.scss';
 
 Vue.config.productionTip = false;
 
@@ -15,6 +16,6 @@ debugger;
 new Vue({
 	el: '#app',
 	router,
-	components: { App },
+	components: {App},
 	template: '<App/>'
 });

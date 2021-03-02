@@ -1,6 +1,6 @@
 <!--首页-->
 <template>
-	<div>
+	<div class="zdigi-index-container">
 	</div>
 </template>
 

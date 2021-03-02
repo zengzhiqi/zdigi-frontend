@@ -1,5 +1,7 @@
 .zdigi-index-container {
 	width: 100%;
 	height: 100%;
-	background: red;
+	background: url($zdigi-images-url + "index/bg.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
 }

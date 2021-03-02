@@ -1,7 +1,7 @@
 let subRouter = function () {
 	return [
 		{
-			path: '/index',
+			path: '/',
 			title: 'index',
 			name: '首页',
 			component: () => import('../views/index/index.vue')

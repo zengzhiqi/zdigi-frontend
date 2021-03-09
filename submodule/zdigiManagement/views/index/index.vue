@@ -1,6 +1,12 @@
 <!--首页-->
 <template>
-	<div class="zdigi-admin-index-container">
+	<div class="zdigi-admin-login-container">
+		<div class="container-center">
+			<div class="title">
+				<span>zdigi</span>
+			</div>
+			<div class="form"></div>
+		</div>
 	</div>
 </template>
 
